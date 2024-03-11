@@ -1,0 +1,17 @@
+#page{
+    background-color: rgb(34, 29, 20); 
+    color: white;
+}
+
+.header{
+    color: yellow;
+ background-color: rgb(88, 176, 208);
+ text-align: center;
+}
+
+.list{
+    background-color: white;
+    color: rgb(90, 13, 233);
+    
+
+}

@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(73, 74, 76);
+    
+}
+.img{
+height: 200px;
+width: 200px;
+}
+
+a{
+    color: white;
+}
+#box1{
+    background-color: black;
+    color: yellow;
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+}

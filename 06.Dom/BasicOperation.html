@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="styleSheet" href="Operation.css">
+</head>
+
+<body id="page" >
+    <div class="header" >
+        <h1 class="title">Kodnest Technology</h1>
+    </div>
+    <ul class="list">
+        <li class="1">JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    function addList(langName) {
+       const list=document.createElement("li")
+       list.appendChild(document.createTextNode(langName))
+       document.querySelector(".list").appendChild(list)
+    }
+    addList("Python")
+    addList("java")
+    addList("JavaScript")
+
+    function addHeading(headingName){
+        const tag=document.createElement("h1")
+        tag.appendChild(document.createTextNode(headingName))
+        document.querySelector(".header").appendChild(tag)
+
+    }
+    //addHeading("Kodnest Technologies")
+
+  function update(langName){
+    const list=document.querySelector("li:nth-child(1)")
+    const newName=document.createElement("li")
+    newName.innerText=langName
+    list.replaceWith(newName)
+  }
+update("C++")
+
+function del() {
+   const last= document.querySelector("li:last-child")
+last.remove()   
+}
+//del()
+
+</script>
+</html>

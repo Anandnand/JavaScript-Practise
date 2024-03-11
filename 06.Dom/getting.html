@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body id="page" style="background-color: black">
+    <div id="page1" class="parent" style="color: white;" >
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+
+    //PARENT-CHILD RELATION
+
+//    const parent= document.querySelector(".parent")
+//   console.log(parent);
+//    console.log(parent.children[0].innerText); 
+//    console.log(parent.children[1].innerText);  
+   
+//    parent.children[1].style.color="red"
+//    parent.children[0].style.color="yellow"
+//    parent.children[2].style.color="blue"
+
+//    console.log(parent.firstElementChild);
+//    console.log(parent.lastElementChild);
+
+
+// CHILD-PARENT RELATION
+  const nameId= document.querySelector(".day")
+  console.log(nameId.innerHTML);
+  console.log(nameId.parentElement);
+  console.log(nameId.nextElementSibling);
+
+
+
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="heading">
+        JavaScript Tutorial Chai aur Code
+    </h1>
+       <button id="start">START</button>
+       <button id="stop">STOP</button>
+</body>
+<script>
+
+
+
+
+    let change;
+     const head=document.getElementById('heading')
+     const start=document.getElementById('start')
+     start.addEventListener('click',function(){
+    change = setTimeout(function(){
+         head.innerHTML="React.js tutoria by Chai aur Code"
+   },500)
+  })
+ 
+
+  const stop=document.getElementById('stop')
+  stop.addEventListener('click',function(){
+   clearTimeout(change)
+   console.log("changing stopped");
+   head.innerHTML="JavaScript chai aur code"
+  })
+ 
+  
+
+   
+</script>
+</html>

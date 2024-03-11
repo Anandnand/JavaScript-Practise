@@ -1,0 +1,25 @@
+#heading{
+background-color: black;
+color: yellow;
+width: 100%;
+text-align: center;
+}
+#page{
+    background-color: bisque;
+}
+#footer{
+    background-color: black;
+    color: yellow;
+    text-align: center;
+}
+#content{
+height: 300px;
+padding-top: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.list{
+    color: aqua;
+}

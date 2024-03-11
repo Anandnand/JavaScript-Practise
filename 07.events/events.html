@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="styleSheet" href="event.css"/>
+</head>
+<body>
+    <div id="box1">
+    <h1>Animal Images</h1>
+    </div>
+    <div>
+        <ul id="images">
+            <li><img width="200px" height="200px" id="tiger" src="tiger.jpg" alt="photoshop"></li>
+            <li><img width="200px" height="200px" id="elephant" src="elephant.avif"></li>
+            <li><img width="200px"height="200px" id="dog" src="dog.jpg" alt=""></li>
+            <li><img width="200px"height="200px"  id="owl" src="cat.avif" alt="" ></li>
+            <li><img width="200px"height="200px"  id="butterfly" src="butterfly.jpeg" alt=""></li>
+            <li><img width="200px" height="200px" id="owl" src="owl.jpeg" alt=""></li>
+            <li><img width="200px"height="200px"  id="chameleon" src="chameleon.avif" alt=""></li>
+            <li><img width="200px"height="200px"  id="fox" src="fox.jpg" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://www.google.com/search?q=animal+images&oq=Animal+image&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQRRg5MgcIAhAAGIAEMgcIAxAAGIAEMgcIBBAAGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAEqAIAsAIA&sourceid=chrome&ie=UTF-8" id="google">Animal Images.com</a></li>
+            </ul>
+   </div>
+</body>
+<script >
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked")
+    // }
+
+     // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    //EVENT PROPAGATION-EVENT BUBBLING
+    
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false)
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    // }, false)
+
+    //EVENT CAPTURING
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log("clicked inside the ul");
+    }, true)
+
+    document.getElementById('owl').addEventListener('click', function(e){
+        console.log("owl clicked");
+        e.stopPropagation()
+    }, true)
+
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target.tagName);
+    //     if (e.target.tagName === 'IMG') {
+    //         console.log(e.target.id);
+    //         let removeIt = e.target.parentNode
+    //         removeIt.remove()
+    //     }
+    
+        
+    // })
+    
+    //removeIt.parentNode.removeChild(removeIt)
+
+
+</script>
+</html>
